@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Profile Stats Card</title>
+  <meta name="description" content="生成可嵌入 README 的 GitHub 个人统计 SVG 卡片。">
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-rounded, "Segoe UI", sans-serif; background:#fff7f1; color:#291f26; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:radial-gradient(circle at 15% 10%,#ffdce8 0,transparent 28%),radial-gradient(circle at 85% 80%,#d8f4ef 0,transparent 30%),#fff7f1; }
+    main { width:min(920px,calc(100% - 32px)); margin:auto; padding:64px 0; }
+    h1 { margin:0; font-size:clamp(30px,6vw,54px); letter-spacing:-2px; }
+    .lead { color:#695c66; font-size:17px; line-height:1.7; max-width:680px; }
+    .panel { margin-top:28px; padding:22px; border:1px solid #eaded7; border-radius:24px; background:rgba(255,255,255,.82); box-shadow:0 18px 50px rgba(110,75,88,.12); backdrop-filter:blur(12px); }
+    .controls { display:grid; grid-template-columns:1fr 180px auto; gap:10px; }
+    input,select,button { height:44px; border-radius:12px; border:1px solid #ddcfd6; padding:0 14px; font:inherit; background:white; color:#291f26; }
+    button { border-color:#ff7fa7; background:#ff7fa7; color:white; font-weight:700; cursor:pointer; }
+    img { display:block; width:100%; margin-top:20px; border-radius:18px; }
+    pre { overflow:auto; padding:14px; border-radius:14px; background:#291f26; color:#fff7f1; font-size:12px; white-space:pre-wrap; word-break:break-all; }
+    small { color:#9a8995; }
+    @media(max-width:680px){ .controls{grid-template-columns:1fr;} main{padding:34px 0;} .panel{padding:15px;} }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Profile Stats Card <span aria-hidden="true">✦</span></h1>
+  <p class="lead">一个轻量、可自部署的 GitHub Profile SVG 卡片。兼容原来的 <code>/api/card?user=...&amp;theme=...</code> 地址格式。</p>
+  <section class="panel">
+    <div class="controls">
+      <input id="user" value="SpringTsuki" aria-label="GitHub 用户名" placeholder="GitHub 用户名">
+      <select id="theme" aria-label="主题">
+        <option>cupcake</option><option>midnight</option><option>azure-noir</option><option>cyber-city</option>
+        <option>darker-than-black</option><option>ice</option><option>sunset</option><option>pine-tree</option>
+      </select>
+      <button id="generate">生成卡片</button>
+    </div>
+    <img id="preview" alt="GitHub profile stats preview">
+    <pre id="markdown"></pre>
+    <small>建议在 Vercel 环境变量中配置 GITHUB_TOKEN，避免公共 API 限流。</small>
+  </section>
+</main>
+<script>
+  const user = document.querySelector('#user');
+  const theme = document.querySelector('#theme');
+  const preview = document.querySelector('#preview');
+  const markdown = document.querySelector('#markdown');
+  function update() {
+    const url = `${location.origin}/api/card?user=${encodeURIComponent(user.value.trim())}&theme=${encodeURIComponent(theme.value)}`;
+    preview.src = url;
+    markdown.textContent = `![GitHub Profile Stats](${url})`;
+  }
+  document.querySelector('#generate').addEventListener('click', update);
+  user.addEventListener('keydown', event => { if (event.key === 'Enter') update(); });
+  theme.addEventListener('change', update);
+  update();
+</script>
+</body>
+</html>

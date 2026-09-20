@@ -1,0 +1,14 @@
+{
+  "name": "profile-stats-card",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A resilient, themeable GitHub profile stats SVG card for Vercel.",
+  "scripts": {
+    "dev": "vercel dev",
+    "test": "node test/card.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
