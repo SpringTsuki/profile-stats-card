@@ -6,6 +6,18 @@ A small, dependency-free Vercel function that renders GitHub profile statistics 
 /api/card?user=SpringTsuki&theme=cupcake
 ```
 
+## Recommended: GitHub Actions
+
+No server, domain, Vercel account, or personal access token is required. The included workflow generates `public/card.svg` on every relevant push and once per day using the repository's built-in `GITHUB_TOKEN`.
+
+Embed the generated card in a README:
+
+```md
+![GitHub Profile Stats](https://raw.githubusercontent.com/SpringTsuki/profile-stats-card/main/public/card.svg)
+```
+
+To update it immediately, open **Actions → Generate profile card → Run workflow**. Change `CARD_USERNAME` or `CARD_THEME` in `.github/workflows/generate-card.yml` when needed.
+
 ## Deploy on Vercel
 
 1. Push this folder to a new GitHub repository.

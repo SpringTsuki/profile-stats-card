@@ -5,6 +5,7 @@
   "description": "A resilient, themeable GitHub profile stats SVG card for Vercel.",
   "scripts": {
     "dev": "vercel dev",
+    "generate": "node scripts/generate-card.js",
     "test": "node test/card.test.js"
   },
   "engines": {
