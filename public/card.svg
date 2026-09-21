@@ -45,13 +45,13 @@
       <circle cx="15" cy="14.5" r="4" fill="#3572A5"/>
       <text x="26" y="19" class="chip">Python</text>
     </g><g transform="translate(423.6 135)">
-      <rect width="105" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
-      <circle cx="15" cy="14.5" r="4" fill="#f1e05a"/>
-      <text x="26" y="19" class="chip">JavaScript</text>
-    </g><g transform="translate(536.6 135)">
       <rect width="69.5" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
       <circle cx="15" cy="14.5" r="4" fill="#8b949e"/>
       <text x="26" y="19" class="chip">Astro</text>
+    </g><g transform="translate(501.1 135)">
+      <rect width="105" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
+      <circle cx="15" cy="14.5" r="4" fill="#f1e05a"/>
+      <text x="26" y="19" class="chip">JavaScript</text>
     </g>
   <text x="631" y="151" class="meta">Since 2019</text>
   <g transform="translate(32 190)">
