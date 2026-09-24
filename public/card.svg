@@ -35,7 +35,7 @@
   <circle cx="146" cy="145" r="8" fill="#72c7bd"/>
   <text x="194" y="73" class="name">SpringTsuki</text>
   <text x="194" y="99" class="handle">@SpringTsuki</text>
-  <text x="194" y="124" class="bio">浅月，写代码的</text>
+  <text x="194" y="124" class="bio">浅月，玩运维同时写代码的。</text>
   <g transform="translate(226 135)">
       <rect width="105" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
       <circle cx="15" cy="14.5" r="4" fill="#8b949e"/>
