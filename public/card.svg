@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="290" viewBox="0 0 760 290" role="img" aria-labelledby="title desc">
   <title id="title">SpringTsuki GitHub profile statistics</title>
-  <desc id="desc">24 repositories, 5 stars, 2 followers and 0 forks.</desc>
+  <desc id="desc">23 repositories, 4 stars, 2 followers and 0 forks.</desc>
   <defs>
     <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#ff7fa7" stop-opacity=".15"/>
@@ -37,13 +37,13 @@
   <text x="194" y="99" class="handle">@SpringTsuki</text>
   <text x="194" y="124" class="bio">浅月，玩运维同时写代码的。</text>
   <g transform="translate(226 135)">
-      <rect width="105" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
-      <circle cx="15" cy="14.5" r="4" fill="#8b949e"/>
-      <text x="26" y="19" class="chip">mcfunction</text>
-    </g><g transform="translate(339 135)">
       <rect width="76.6" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
       <circle cx="15" cy="14.5" r="4" fill="#3572A5"/>
       <text x="26" y="19" class="chip">Python</text>
+    </g><g transform="translate(310.6 135)">
+      <rect width="105" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
+      <circle cx="15" cy="14.5" r="4" fill="#8b949e"/>
+      <text x="26" y="19" class="chip">mcfunction</text>
     </g><g transform="translate(423.6 135)">
       <rect width="69.5" height="29" rx="14.5" fill="#fff0f5" stroke="#eaded7"/>
       <circle cx="15" cy="14.5" r="4" fill="#8b949e"/>
@@ -57,13 +57,13 @@
   <g transform="translate(32 190)">
     <rect width="142" height="70" rx="16" fill="#ffffff" stroke="#eaded7"/>
     <text x="18" y="29" class="statIcon">⌘</text>
-    <text x="48" y="31" class="statValue">24</text>
+    <text x="48" y="31" class="statValue">23</text>
     <text x="18" y="53" class="statLabel">Repositories</text>
   </g>
   <g transform="translate(182 190)">
     <rect width="142" height="70" rx="16" fill="#ffffff" stroke="#eaded7"/>
     <text x="18" y="29" class="statIcon">★</text>
-    <text x="48" y="31" class="statValue">5</text>
+    <text x="48" y="31" class="statValue">4</text>
     <text x="18" y="53" class="statLabel">Stars earned</text>
   </g>
   <g transform="translate(332 190)">
